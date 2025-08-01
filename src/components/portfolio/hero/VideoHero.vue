@@ -47,9 +47,9 @@ import HeroContent from './HeroContent.vue'
 // Video sources
 const videoSources = {
   // wide: '/videos/MBD_CLA_15sec_Design_Clean_Diverse_12x5_small.mp4',
-  wide: '/videos/output-720p.mp4',
+  wide: '/videos/hero-720p.mp4',
   // square: '/videos/MBD_CLA_15sec_Design_Clean_Diverse_1x1_small.mp4'
-  square: '/videos/output-720p.mp4',
+  square: '/videos/hero-720p.mp4',
 }
 
 // Reactive state
