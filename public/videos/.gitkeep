@@ -1,0 +1,18 @@
+# Videos Directory
+
+This directory contains self-hosted videos for the website.
+
+## Video Format Guidelines:
+- **Format**: MP4 (H.264 codec)
+- **Resolution**: Max 1080p for web
+- **Bitrate**: 1-3 Mbps for good quality/size balance
+- **Audio**: AAC codec, 128kbps
+
+## File Naming Convention:
+- Use descriptive names: `project-name-demo.mp4`
+- Keep filenames web-safe (no spaces, special characters)
+
+## Optimization Tips:
+- Compress videos with tools like HandBrake
+- Create multiple resolutions if needed (720p, 1080p)
+- Consider WebM format for better compression 

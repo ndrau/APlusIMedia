@@ -1,0 +1,12 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with rounded corners for iOS -->
+  <rect x="0" y="0" width="180" height="180" rx="40" ry="40" fill="#101014"/>
+  
+  <!-- Text "A R" - larger -->
+  <text x="90" y="115" 
+        font-family="Arial, sans-serif" 
+        font-size="80" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="white">AR</text>
+</svg> 

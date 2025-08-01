@@ -1,0 +1,25 @@
+/* Common animations used across components */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility animation classes */
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-up-delayed {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.fade-in-up-more-delayed {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}

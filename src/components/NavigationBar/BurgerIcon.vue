@@ -1,0 +1,40 @@
+<script setup lang="ts">
+// No props needed, this is a pure SVG icon component
+</script>
+
+<template>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 512 512"
+  >
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-miterlimit="10"
+      stroke-width="32"
+      d="M80 160h352"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-miterlimit="10"
+      stroke-width="32"
+      d="M80 256h352"
+    />
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-miterlimit="10"
+      stroke-width="32"
+      d="M80 352h352"
+    />
+  </svg>
+</template>
+
+<style scoped lang="scss">
+// SVG inherits size from parent, no additional styling needed
+</style> 

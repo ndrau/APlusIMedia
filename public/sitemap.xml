@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://andyrau.de/</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://andyrau.de/?lang=en" />
+  </url>
+  
+  <!-- Videos Section -->
+  <url>
+    <loc>https://andyrau.de/#videos</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/#videos?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://andyrau.de/#videos?lang=en" />
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://andyrau.de/#services</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/#services?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://andyrau.de/#services?lang=en" />
+  </url>
+  
+  <!-- Testimonials Section -->
+  <url>
+    <loc>https://andyrau.de/#testimonials</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/#testimonials?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://andyrau.de/#testimonials?lang=en" />
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://andyrau.de/#contact</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/#contact?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://andyrau.de/#contact?lang=en" />
+  </url>
+  
+  <!-- Impressum -->
+  <url>
+    <loc>https://andyrau.de/impressum</loc>
+    <lastmod>2025-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://andyrau.de/impressum?lang=de" />
+  </url>
+  
+</urlset> 

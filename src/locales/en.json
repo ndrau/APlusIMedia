@@ -1,0 +1,332 @@
+{
+  "nav": {
+    "brand": "Andy Rau",
+    "work": "Work",
+    "portfolio": "Portfolio",
+    "benefits": "Benefits",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "packages": "Packages",
+    "contact": "Contact",
+    "info": "Info",
+    "impressum": "Legal",
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language"
+  },
+  "hero": {
+    "title": "Create Viral Short-Form Content",
+    "subtitle": "Professional video editing for Instagram Reels, YouTube Shorts & TikTok",
+    "description": "Transform your brand with engaging short-form videos that capture attention and drive results in today's fast-paced digital world.",
+    "question": "You need...",
+    "answer": {
+      "start": "then you're in exactly the right place! Transform",
+      "highlight1": "your brand",
+      "middle1": "with",
+      "highlight2": "engaging short-form videos ",
+      "middle2": "that",
+      "highlight3": "capture attention",
+      "middle3": "and",
+      "highlight4": "drive results",
+      "end": "in today's fast-paced digital world."
+    },
+    "cta": "Let's Create Together",
+    "scrollHint": "Scroll down"
+  },
+  "work": {
+    "title": "Featured Work",
+    "subtitle": "Recent projects that made an impact"
+  },
+  "benefits": {
+    "title": "Why Short-Form Video Content Matters",
+    "subtitle": "In today's digital landscape, attention spans are shorter than ever",
+    "items": [
+      {
+        "title": "Maximum Engagement",
+        "description": "Short-form videos get 2.5x more engagement than longer content, keeping your audience hooked from start to finish."
+      },
+      {
+        "title": "Algorithm Friendly",
+        "description": "Platforms like Instagram, TikTok, and YouTube prioritize short-form content, giving you better organic reach."
+      },
+      {
+        "title": "Mobile-First",
+        "description": "Over 70% of content consumption happens on mobile devices. Short videos are perfect for on-the-go viewing."
+      },
+      {
+        "title": "Cost-Effective",
+        "description": "Get maximum impact with minimal investment. Short-form content delivers results without breaking the budget."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": {
+      "start": "Web Developer with 10+ years experience, passionate",
+      "highlight": "video creator",
+      "end": "."
+    },
+    "description": {
+      "start": "As a web developer, I bring over 10 years of experience working at global companies like",
+      "highlight1": "IBM",
+      "middle1": "and",
+      "highlight2": "Mercedes-Benz",
+      "middle2": ". What started as a creative hobby – an outlet for my artistic side beyond the corporate world – has evolved into a second",
+      "highlight3": "passion",
+      "middle3": ":",
+      "highlight4": "videography",
+      "middle4": ". This unique combination of technical expertise and creative vision allows me to craft",
+      "highlight5": "exceptional video content",
+      "end": " that is both visually stunning and strategically sound."
+    },
+    "personalStatement": {
+      "start": "",
+      "highlight1": "Your company's success",
+      "middle": " is important to me – together we'll ",
+      "highlight2": "make your brand strong",
+      "end": "."
+    },
+    "skills": "Corporate Videos & Brand Films • Social Media Content (Reels/Shorts) • Web Development • Content Strategy • Corporate Design"
+  },
+  "packages": {
+    "title": "My Video Packages",
+    "subtitle": {
+      "start": "I create ",
+      "highlight1": "customized packages",
+      "middle1": " tailored to ",
+      "highlight2": "your requirements",
+      "middle2": ". For ",
+      "highlight3": "larger projects",
+      "middle3": " or ",
+      "highlight4": "ongoing collaborations",
+      "middle4": ", ",
+      "highlight5": "attractive terms",
+      "end": " are available."
+    },
+    "disclaimer": "All prices are exclusive of VAT. The prices shown are indicative for the described services. Additional costs such as licenses, media budget, or printing costs are not included.",
+    "mostPopular": "Most Popular",
+    "cta": "Schedule a Meeting",
+    "small": {
+      "name": "Starter",
+      "price": "from 1.300 €",
+      "description": "My starter package is perfect for companies taking their first steps in the world of video content.",
+      "note": "Ideal for: product presentations, image films, social media content",
+      "features": [
+        "1 x Short videos (product presentation, image film, team presentation etc.)",
+        "1 x Reportage/Event coverage (product launch, company event, trade show appearance etc.)",
+        "1 x Drone footage (aerial shots, 360° panoramas, follow-me shots etc.)",
+        "1 x Explainer video (product features, services, processes etc.)",
+        "1 x Social media content (Instagram Reels, TikTok, YouTube Shorts etc.)"
+      ]
+    },
+    "medium": {
+      "name": "Professional",
+      "price": "from €3,900",
+      "description": "Expand your video presence with my Professional package. In addition to high-quality short videos and drone footage, you'll receive a professional reportage and an explainer video for your more complex content.",
+      "note": "Perfect for comprehensive brand communication and storytelling",
+      "features": [
+        "2 x Short videos (Company portrait, Product showcase, Team presentation etc.)",
+        "1 x Reportage/Event coverage (e.g. trade show appearance, company event, product launch)",
+        "1 x Explainer video (e.g. product features, process flows, services)",
+        "1 x Drone footage (e.g. for image film, event coverage, location shooting)",
+        "Including concept, on-site shooting and post-production",
+        "Delivery of final videos as file or embedded link",
+        "4K resolution for all formats"
+      ]
+    },
+    "large": {
+      "name": "Premium",
+      "price": "from €22,000",
+      "description": "Develop a comprehensive video strategy for your company with me. The Premium package offers you year-round, professional video support with diverse formats.",
+      "note": "Comprehensive video strategy for your company",
+      "features": [
+        "4 x Short videos (Company portrait, Product showcase, Team presentation etc.)",
+        "2 x Reportage/Event coverage (e.g. trade show appearance, company event, product launch)",
+        "2 x Explainer video (e.g. product features, process flows, services)",
+        "2 x Drone footage (e.g. for image film, event coverage, location shooting)",
+        "Including concept, on-site shooting and post-production",
+        "Delivery of final videos as file or embedded link",
+        "4K resolution for all formats"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Not convinced yet?",
+    "subtitle": "Then see what my clients are saying",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "items": [
+      {
+        "text": "Andy has produced impressive videos for us that don't just show us and our kitchens, but bring them to life and can be perfectly used for advertising, especially on social media. His professional approach, creative vision, and genuine understanding of our craft have impressed us tremendously. We've worked with many agencies before that promised us the world. But at the end of the day, none of them actually delivered. Andy is the first one who not only truly listened to us, but also understood what we wanted and showed us how to get there with complete dedication. Working with him was always straightforward, highly efficient, and focused – we absolutely recommend him! We especially want to highlight that Andy really puts himself in each business owner's shoes and makes your goals his own – as if it were his own company that needed to succeed through the content – you can't ask for better than that! We'll definitely be starting many more projects with Andy Rau in the future, and we're using this review to say a heartfelt THANK YOU!",
+        "author": "Achim & Patrick Henselmann",
+        "role": "CEOs of Schwarzwald Küchen Bad Dürrheim"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": {
+      "start": "Ready to ",
+      "highlight": "bring your vision to life",
+      "end": "? Let's talk!"
+    },
+    "note": "Feel free to contact me if you have any questions.",
+    "book": "Book a Meeting",
+    "phone": "Call Me",
+    "email": "Send an Email",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "message": "Tell me about your project",
+      "send": "Send Message"
+    },
+    "messages": {
+      "success": "Thanks for your submission! I'll get back to you soon.",
+      "error": "Oops! There was a problem submitting your form. Please try again.",
+      "errorWithDetails": "Form error: {errors}",
+      "errorFallback": "Oops! There was a problem submitting your form. Please try the email button instead."
+    },
+    "emailTemplate": {
+      "subject": "Project Inquiry from {name}",
+      "subjectDefault": "Project Inquiry",
+      "greeting": "Hi Andy,",
+      "defaultMessage": "I would like to discuss a video project with you.",
+      "closing": "Best regards,",
+      "nameLabel": "Name:",
+      "emailLabel": "Email:",
+      "messageLabel": "Message:"
+    }
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "backToHome": "Back to Home",
+    "contact": {
+      "title": "Information according to § 5 DDG",
+      "phone": {
+        "label": "Phone:"
+      },
+      "email": {
+        "label": "Email:"
+      },
+      "website": {
+        "label": "Website:"
+      }
+    },
+    "business": {
+      "title": "Professional designation and professional regulations",
+      "tax": {
+        "label": "Economic identification number:"
+      },
+      "smallBusiness": {
+        "label": "Small business regulation:",
+        "note": "According to § 19 UStG (German VAT Act), no VAT is shown."
+      }
+    },
+    "authority": {
+      "title": "Supervisory authority"
+    },
+    "insurance": {
+      "title": "Professional liability insurance",
+      "company": {
+        "label": "Insurance:"
+      },
+      "coverage": {
+        "label": "Insurance coverage area:"
+      }
+    },
+    "responsibility": {
+              "title": "Responsible for content according to § 18 Abs. 2 MStV",
+              "note": "As a service provider, we are responsible for our own content on these pages according to § 7 Para. 1 DDG under general laws."
+    },
+    "liability": {
+      "title": "Liability for content",
+      "content": {
+        "title": "Liability for content",
+        "text": "As a service provider, we are responsible for our own content on these pages according to § 7 Para. 1 DDG under general laws. However, according to §§ 8 to 10 DDG, we as service providers are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+      },
+      "links": {
+        "title": "Liability for links",
+        "text": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "text": "The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, processing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
+      }
+    },
+    "dispute": {
+      "title": "Dispute resolution",
+      "text": "The European Commission provides a platform for online dispute resolution (ODR):",
+      "platform": {
+        "label": "Online dispute resolution:",
+        "url": "https://ec.europa.eu/consumers/odr/"
+      },
+      "email": "You can find our email address above in the legal notice. We are not willing or obligated to participate in dispute resolution procedures before a consumer arbitration board."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "title": "Privacy Policy",
+        "text": "We take the protection of your personal data very seriously. This privacy policy informs you about the nature, scope and purpose of the processing of personal data on our website."
+      },
+      "analytics": {
+        "title": "Web Analytics with Umami",
+        "text": "This website uses Umami Analytics for anonymous analysis of website usage. Umami does not collect personal data and does not use cookies. Only anonymized usage statistics such as page views, dwell time and browsers used are created.",
+        "provider": "Provider: Umami Software Inc.",
+        "basis": "Legal basis: Legitimate interest (Art. 6 para. 1 lit. f GDPR)",
+        "purpose": "Purpose: Improving website performance and user experience",
+        "data": "Processed data: Anonymized IP addresses, page views, browser information, referrer",
+        "retention": "Retention period: Data is automatically deleted after 2 years"
+      },
+      "contact": {
+        "title": "Contact Form",
+        "text": "When using our contact form, the data you enter will be used to process your request.",
+        "basis": "Legal basis: Consent (Art. 6 para. 1 lit. a GDPR) or pre-contractual measures (Art. 6 para. 1 lit. b GDPR)",
+        "retention": "The data will be deleted as soon as it is no longer required for the purpose."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "text": "You have the right to information, correction, deletion, restriction of processing, data portability and objection. If you have any questions about data protection, please contact us using the email address provided above."
+              },
+        "videos": {
+          "title": "Videos",
+          "text": "All videos on our website are self-hosted and served directly from our servers. No data is transmitted to external video platforms and no additional cookies are set."
+        },
+        "socialMedia": {
+        "title": "Social Media Links", 
+        "text": "Our website contains links to social networks (Instagram, YouTube, LinkedIn). These links lead to external websites.",
+        "note": "Note: By clicking on these links, you leave our website. The privacy policies of the respective platforms apply."
+      }
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact",
+      "emailSubject": "Project Inquiry via andyrau.de"
+    },
+    "links": {
+      "title": "Quick Links"
+    },
+    "services": {
+      "title": "Services",
+      "reels": "Instagram Reels",
+      "shorts": "YouTube Shorts",
+      "tiktok": "TikTok Videos",
+      "editing": "Video Editing"
+    },
+    "social": {
+      "title": "Follow Me"
+    },
+    "copyright": {
+      "name": "Andy Rau",
+      "rights": "All rights reserved."
+    },
+    "meta": {
+      "made": "Made with ❤️",
+      "legal": "Legal Notice"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success!"
+  }
+} 

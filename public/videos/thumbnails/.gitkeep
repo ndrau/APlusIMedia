@@ -1,0 +1,12 @@
+# Thumbnails Directory
+
+This directory contains thumbnail images for self-hosted videos.
+
+## Guidelines:
+- **Format**: JPG (best compression for photos)
+- **Resolution**: 1920x1080 (16:9 aspect ratio)
+- **Quality**: 85-95% for good balance
+- **Naming**: match-video-name-thumb.jpg
+
+## Auto-generation:
+Use the convert-video.sh script to automatically generate thumbnails from videos. 

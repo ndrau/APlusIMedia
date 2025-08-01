@@ -1,0 +1,332 @@
+{
+  "nav": {
+    "brand": "Andy Rau",
+    "work": "Projekte",
+    "portfolio": "Portfolio",
+    "benefits": "Vorteile",
+    "about": "Über mich",
+    "testimonials": "Referenzen",
+    "packages": "Pakete",
+    "contact": "Kontakt",
+    "info": "Info",
+    "impressum": "Impressum",
+    "toggleTheme": "Design wechseln",
+    "toggleLanguage": "Sprache wechseln"
+  },
+  "hero": {
+    "title": "Erstelle virale Kurzvideo-Inhalte",
+    "subtitle": "Professionelle Videobearbeitung für Instagram Reels, YouTube Shorts & TikTok",
+    "description": "Verwandle deine Marke mit fesselnden Kurzvideos, die Aufmerksamkeit erregen und Ergebnisse in der heutigen schnelllebigen digitalen Welt erzielen.",
+    "question": "Du brauchst...",
+    "answer": {
+      "start": "dann bist du hier genau richtig! Verwandle",
+      "highlight1": "deine Marke",
+      "middle1": "mit",
+      "highlight2": "fesselnden Kurzvideos",
+      "middle2": ", die",
+      "highlight3": "Aufmerksamkeit erregen",
+      "middle3": "und",
+      "highlight4": "Ergebnisse",
+      "end": "in der heutigen schnelllebigen digitalen Welt erzielen."
+    },
+    "cta": "Lass uns zusammenarbeiten",
+    "scrollHint": "Nach unten scrollen"
+  },
+  "work": {
+    "title": "Ausgewählte Arbeiten",
+    "subtitle": "Aktuelle Projekte, die einen Eindruck hinterlassen haben"
+  },
+  "benefits": {
+    "title": "Warum Kurzvideo-Inhalte wichtig sind",
+    "subtitle": "In der heutigen digitalen Landschaft sind die Aufmerksamkeitsspannen kürzer denn je",
+    "items": [
+      {
+        "title": "Maximales Engagement",
+        "description": "Kurzvideos erhalten 2,5x mehr Engagement als längere Inhalte und halten dein Publikum von Anfang bis Ende gefesselt."
+      },
+      {
+        "title": "Algorithmus-freundlich",
+        "description": "Plattformen wie Instagram, TikTok und YouTube bevorzugen Kurzvideo-Inhalte und bieten dir eine bessere organische Reichweite."
+      },
+      {
+        "title": "Mobile-First",
+        "description": "Über 70% des Inhaltskonsums findet auf mobilen Geräten statt. Kurze Videos sind perfekt für unterwegs."
+      },
+      {
+        "title": "Kosten-Effektiv",
+        "description": "Maximale Wirkung mit minimaler Investition. Kurzvideo-Inhalte liefern Ergebnisse ohne das Budget zu sprengen."
+      }
+    ]
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": {
+      "start": "Web-Entwickler mit über 10 Jahren Erfahrung, leidenschaftlicher",
+      "highlight": "Videograf",
+      "end": "."
+    },
+    "description": {
+      "start": "Als Web-Entwickler bringe ich über 10 Jahre Erfahrung aus der Arbeit bei Weltkonzernen wie",
+      "highlight1": "IBM",
+      "middle1": "und",
+      "highlight2": "Mercedes-Benz",
+      "middle2": "mit. Was als kreatives Hobby begann – ein Ventil für meine Kreativität jenseits der Unternehmenswelt – hat sich zu einer zweiten",
+      "highlight3": "Leidenschaft",
+      "middle3": "entwickelt: der",
+      "highlight4": "Videografie",
+      "middle4": ". Diese einzigartige Kombination aus technischem Know-how und kreativer Vision ermöglicht es mir,",
+      "highlight5": "außergewöhnliche Video-Inhalte",
+      "end": " zu schaffen, die sowohl visuell beeindruckend als auch strategisch durchdacht sind."
+    },
+    "personalStatement": {
+      "start": "Mir liegt der ",
+      "highlight1": "Erfolg deines Unternehmens",
+      "middle": " am Herzen – gemeinsam machen wir ",
+      "highlight2": "deine Marke stark",
+      "end": "."
+    },
+    "skills": "Imagefilme & Corporate Videos • Social Media Content (Reels/Shorts) • Web Entwicklung • Content-Strategie • Corporate Design"
+  },
+  "packages": {
+    "title": "Meine Bewegtbild-Pakete",
+    "subtitle": {
+      "start": "Ich erstelle ",
+      "highlight1": "maßgeschneiderte Pakete",
+      "middle1": ", die genau auf ",
+      "highlight2": "deine Anforderungen",
+      "middle2": " zugeschnitten sind. Bei ",
+      "highlight3": "größeren Projekten",
+      "middle3": " oder ",
+      "highlight4": "regelmäßiger Zusammenarbeit",
+      "middle4": " sind ",
+      "highlight5": "attraktive Konditionen",
+      "end": " möglich."
+    },
+    "disclaimer": "Alle Preise verstehen sich zzgl. MwSt. Die angegebenen Preise sind Richtwerte für die beschriebenen Leistungen. Zusätzliche Kosten wie Lizenzen, Mediabudget oder Druckkosten sind nicht enthalten.",
+    "mostPopular": "Beliebteste",
+    "cta": "Termin vereinbaren",
+    "small": {
+      "name": "Starter",
+      "price": "ab 1.300 €",
+      "description": "Mein Starter-Paket ist perfekt für Unternehmen, die ihre ersten Schritte in der Bewegtbild-Welt machen möchten.",
+      "note": "Ideal für: Produktvorstellungen, Imagefilme, Social Media Content",
+      "features": [
+        "1 x Kurzvideos (Produktvorstellung, Imagefilm, Teampräsentation etc.)",
+        "1 x Reportage/Event Coverage (Produktlaunch, Firmenevent, Messeauftritt etc.)",
+        "1 x Drohnenaufnahmen (Luftaufnahmen, 360°-Panoramen, Follow-Me-Shots etc.)",
+        "1 x Erklärvideo (Produktfunktionen, Dienstleistungen, Prozesse etc.)",
+        "1 x Social Media Content (Instagram Reels, TikTok, YouTube Shorts etc.)"
+      ]
+    },
+    "medium": {
+      "name": "Professional",
+      "price": "ab 3.900 €",
+      "description": "Erweitern Sie Ihre Video-Präsenz mit meinem Professional-Paket. Neben hochwertigen Kurzvideos und Drohnenaufnahmen erhalten Sie eine professionelle Reportage und ein Erklärvideo für Ihre komplexeren Inhalte.",
+      "note": "Perfekt für umfassende Markenkommunikation und Storytelling",
+      "features": [
+        "2 x Kurzvideos (Unternehmensportrait, Produktvorstellung, Team-Showcase etc.)",
+        "1 x Reportage/Event-Coverage (z.B. Messeauftritt, Firmenevent, Produktlaunch)",
+        "1 x Erklärvideo (z.B. Produktfeatures, Prozessabläufe, Dienstleistungen)",
+        "1 x Drohnenaufnahmen (z.B. für Imagefilm, Event-Coverage, Location-Shooting)",
+        "Inkl. Konzept, Shooting vor Ort und Postproduktion",
+        "Bereitstellung der finalen Filme als Datei bzw. als eingebetteter Link",
+        "4K-Auflösung für alle Formate"
+      ]
+    },
+    "large": {
+      "name": "Premium",
+      "price": "ab 22.000 €",
+      "description": "Entwickeln Sie mit mir eine umfassende Video-Strategie für Ihr Unternehmen. Das Premium-Paket bietet Ihnen eine ganzjährige, professionelle Bewegtbild-Begleitung mit vielfältigen Formaten.",
+      "note": "Umfassende Video-Strategie für Ihr Unternehmen",
+      "features": [
+        "4 x Kurzvideos (Unternehmensportrait, Produktvorstellung, Team-Showcase etc.)",
+        "2 x Reportage/Event-Coverage (z.B. Messeauftritt, Firmenevent, Produktlaunch)",
+        "2 x Erklärvideo (z.B. Produktfeatures, Prozessabläufe, Dienstleistungen)",
+        "2 x Drohnenaufnahmen (z.B. für Imagefilm, Event-Coverage, Location-Shooting)",
+        "Inkl. Konzept, Shooting vor Ort und Postproduktion",
+        "Bereitstellung der finalen Filme als Datei bzw. als eingebetteter Link",
+        "4K-Auflösung für alle Formate"
+      ]
+    }
+  },
+  "testimonials": {
+    "title": "Noch nicht überzeugt?",
+    "subtitle": "Dann schau dir an, was meine Kunden sagen",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger lesen",
+    "items": [
+      {
+        "text": "Andy hat für uns beeindruckende Videos produziert, die uns und unsere Küchen nicht nur zeigen, sondern zum Leben erwecken und optimal für Werbezwecke, besonders SocialMedia, genutzt werden können. Seine professionelle Herangehensweise, sein kreativer Blick und sein echtes Verständnis für unser Handwerk haben uns begeistert. Wir hatten schon sehr häufig mit Agenturen zu tun, welche uns das Blaue vom Himmel versprochen haben. Am Ende des Tages hat jedoch keine davon wirklich abgeliefert. Andy ist der Erste, der uns nicht nur exakt zugehört hat, sondern auch verstanden hat was wir haben möchten und den Weg dorthin hat er uns mit maximalem Einsatz gezeigt. Die Zusammenarbeit war zu jederzeit unkompliziert, sehr effizient und auf den Punkt – absolut empfehlenswert! Besonders hervorheben möchten wir, dass Andy wirklich versucht sich in den jeweiligen Unternehmer hineinzuversetzen und das vorgegebene Ziel zu seinem eigenen macht - als wäre es seine eigene Firma die durch das Material gepusht werden muss - besser geht es nicht! Wir werden auch in Zukunft noch viele weitere Projekte mit Andy Rau starten und nutzen diese Rezension um von Herzen DANKE zu sagen!",
+        "author": "Achim & Patrick Henselmann",
+        "role": "Geschäftsführer von Schwarzwald Küchen Bad Dürrheim"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": {
+      "start": "Bereit, ",
+      "highlight": "deine Vision zum Leben zu erwecken",
+      "end": "? Lass uns sprechen!"
+    },
+    "note": "Bei Fragen stehe ich dir gerne zur Verfügung.",
+    "book": "Termin buchen",
+    "phone": "Anrufen",
+    "email": "E-Mail senden",
+    "form": {
+      "name": "Dein Name",
+      "email": "E-Mail-Adresse",
+      "message": "Erzähle mir von deinem Projekt",
+      "send": "Nachricht senden"
+    },
+    "messages": {
+      "success": "Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.",
+      "error": "Ups! Es gab ein Problem beim Senden deiner Nachricht. Bitte versuche es erneut.",
+      "errorWithDetails": "Formular-Fehler: {errors}",
+      "errorFallback": "Ups! Es gab ein Problem beim Senden deiner Nachricht. Bitte verwende stattdessen den E-Mail-Button."
+    },
+    "emailTemplate": {
+      "subject": "Projektanfrage von {name}",
+      "subjectDefault": "Projektanfrage",
+      "greeting": "Hallo Andy,",
+      "defaultMessage": "ich würde gerne ein Videoprojekt mit dir besprechen.",
+      "closing": "Beste Grüße,",
+      "nameLabel": "Name:",
+      "emailLabel": "E-Mail:",
+      "messageLabel": "Nachricht:"
+    }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "backToHome": "Zurück zur Startseite",
+    "contact": {
+      "title": "Angaben gemäß § 5 DDG",
+      "phone": {
+        "label": "Telefon:"
+      },
+      "email": {
+        "label": "E-Mail:"
+      },
+      "website": {
+        "label": "Website:"
+      }
+    },
+    "business": {
+      "title": "Berufsbezeichnung und berufsrechtliche Regelungen",
+      "tax": {
+        "label": "Wirtschafts-Identifikationsnummer:"
+      },
+      "smallBusiness": {
+        "label": "Kleinunternehmerregelung:",
+        "note": "Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen."
+      }
+    },
+    "authority": {
+      "title": "Aufsichtsbehörde"
+    },
+    "insurance": {
+      "title": "Berufshaftpflichtversicherung",
+      "company": {
+        "label": "Versicherung:"
+      },
+      "coverage": {
+        "label": "Geltungsraum der Versicherung:"
+      }
+    },
+    "responsibility": {
+              "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+              "note": "Wir sind als Diensteanbieter nach § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+    },
+    "liability": {
+      "title": "Haftung für Inhalte",
+      "content": {
+        "title": "Haftung für Inhalte",
+        "text": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "text": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+      }
+    },
+    "dispute": {
+      "title": "Streitschlichtung",
+      "text": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+      "platform": {
+        "label": "Online-Streitbeilegung:",
+        "url": "https://ec.europa.eu/consumers/odr/"
+      },
+      "email": "Unsere E-Mail-Adresse finden Sie oben im Impressum. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "intro": {
+        "title": "Datenschutzerklärung",
+        "text": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und den Zweck der Verarbeitung von personenbezogenen Daten auf unserer Website."
+      },
+      "analytics": {
+        "title": "Webanalyse mit Umami",
+        "text": "Diese Website verwendet Umami Analytics zur anonymen Analyse der Websitenutzung. Umami sammelt keine personenbezogenen Daten und verwendet keine Cookies. Es werden lediglich anonymisierte Nutzungsstatistiken wie Seitenzugriffe, Verweildauer und verwendete Browser erstellt.",
+        "provider": "Anbieter: Umami Software Inc.",
+        "basis": "Rechtsgrundlage: Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)",
+        "purpose": "Zweck: Verbesserung der Website-Performance und Benutzererfahrung",
+        "data": "Verarbeitete Daten: Anonymisierte IP-Adressen, Seitenzugriffe, Browser-Informationen, Referrer",
+        "retention": "Speicherdauer: Daten werden nach 2 Jahren automatisch gelöscht"
+      },
+      "contact": {
+        "title": "Kontaktformular",
+        "text": "Bei der Nutzung unseres Kontaktformulars werden die von Ihnen eingegebenen Daten zur Bearbeitung Ihrer Anfrage verwendet.",
+        "basis": "Rechtsgrundlage: Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) bzw. vorvertragliche Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO)",
+        "retention": "Die Daten werden gelöscht, sobald sie für die Zweckerreichung nicht mehr erforderlich sind."
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "text": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Bei Fragen zum Datenschutz kontaktieren Sie uns unter der oben angegebenen E-Mail-Adresse."
+              },
+        "videos": {
+          "title": "Videos",
+          "text": "Alle Videos auf unserer Website werden selbst gehostet und direkt von unseren Servern bereitgestellt. Es werden keine Daten an externe Video-Plattformen übertragen und keine zusätzlichen Cookies gesetzt."
+        },
+        "socialMedia": {
+        "title": "Social Media Links", 
+        "text": "Unsere Website enthält Links zu sozialen Netzwerken (Instagram, YouTube, LinkedIn). Diese Links führen zu externen Websites.",
+        "note": "Hinweis: Beim Klick auf diese Links verlassen Sie unsere Website. Es gelten die Datenschutzbestimmungen der jeweiligen Plattformen."
+      }
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Kontakt",
+      "emailSubject": "Projektanfrage über andyrau.de"
+    },
+    "links": {
+      "title": "Navigation"
+    },
+    "services": {
+      "title": "Services",
+      "reels": "Instagram Reels",
+      "shorts": "YouTube Shorts",
+      "tiktok": "TikTok Videos",
+      "editing": "Video Editing"
+    },
+    "social": {
+      "title": "Social Media"
+    },
+    "copyright": {
+      "name": "Andy Rau",
+      "rights": "Alle Rechte vorbehalten."
+    },
+    "meta": {
+      "made": "Mit ❤️ erstellt",
+      "legal": "Impressum"
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Etwas ist schiefgelaufen",
+    "success": "Erfolgreich!"
+  }
+} 

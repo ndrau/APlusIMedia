@@ -1,0 +1,5 @@
+export { default as VideoHero } from './hero/VideoHero.vue'
+export { default as PortfolioNavigation } from './PortfolioNavigation.vue'
+export { default as PortfolioNavFooter } from './PortfolioNavFooter.vue'
+export { default as PortfolioFooter } from './PortfolioFooter.vue'
+export { default as PortfolioScrollHint } from './PortfolioScrollHint.vue' 
