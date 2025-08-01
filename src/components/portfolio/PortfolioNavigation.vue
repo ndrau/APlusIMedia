@@ -85,7 +85,7 @@
   
   .brand-name {
     font-family: 'IvyOra', serif;
-    font-size: 0.875rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #ffffff;
   }

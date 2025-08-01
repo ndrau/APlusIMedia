@@ -222,11 +222,11 @@ const setupScrollTrigger = () => {
       }
     })
     .to(heroSection, { 
-      scale: 0.3, 
+      scale: 0.15, 
       duration: 3
     })
     .to(heroSection, { 
-      scale: 0.3, 
+      scale: 0.15, 
       duration: portfolioVideos.length * 2 // Continue scaling down as more items are added
     }, 3)
     .to(heroSection, {
