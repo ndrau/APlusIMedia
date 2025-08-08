@@ -8,6 +8,7 @@
     :autoplay="true"
     preload="metadata"
     playsinline
+    aria-hidden="true"
   />
 </template>
 

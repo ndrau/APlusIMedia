@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "generate-favicons": "node scripts/generate-favicons.js"
+    "generate-favicons": "node scripts/generate-favicons.js",
+    "generate-responsive-images": "node scripts/generate-responsive-images.js",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@vicons/ionicons5": "^0.13.0",
@@ -32,6 +34,7 @@
     "typescript": "~5.8.0",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2",
-    "vue-tsc": "^2.2.8"
+    "vue-tsc": "^2.2.8",
+    "@playwright/test": "^1.49.1"
   }
 }

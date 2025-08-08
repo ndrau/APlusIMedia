@@ -1,7 +1,8 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
 export function useResponsive() {
-  const screenWidth = ref(window.innerWidth)
+  const initialWidth = typeof window !== 'undefined' ? window.innerWidth : 1024
+  const screenWidth = ref(initialWidth)
 
   const screenSize = computed(() => {
     if (screenWidth.value <= 480) return 'Mobile (XS)'
@@ -16,14 +17,17 @@ export function useResponsive() {
   const isDesktop = computed(() => screenWidth.value > 1024)
 
   const handleResize = () => {
+    if (typeof window === 'undefined') return
     screenWidth.value = window.innerWidth
   }
 
   onMounted(() => {
+    if (typeof window === 'undefined') return
     window.addEventListener('resize', handleResize)
   })
 
   onUnmounted(() => {
+    if (typeof window === 'undefined') return
     window.removeEventListener('resize', handleResize)
   })
 
