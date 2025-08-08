@@ -4,7 +4,6 @@ import './styles/glass-morphism.css'
 
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
-import VueWriter from 'vue-writer'
 
 import App from './App.vue'
 import router from './router'
@@ -50,6 +49,5 @@ const i18n = createI18n({
 app.use(router)
 app.use(naive)
 app.use(i18n)
-app.use(VueWriter as any)
 
 app.mount('#app')

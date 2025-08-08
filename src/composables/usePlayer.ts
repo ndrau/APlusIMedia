@@ -53,7 +53,8 @@ export function usePlayer(props: VideoPlayerProps, playerContainer: Ref<HTMLElem
           ...(props.startTime && { start: props.startTime.toString() })
         })
         
-        iframe.src = `https://www.youtube.com/embed/${props.videoId}?${params.toString()}`
+        // Use privacy-enhanced mode
+        iframe.src = `https://www.youtube-nocookie.com/embed/${props.videoId}?${params.toString()}`
         
         // Add iframe to container
         playerContainer.value.appendChild(iframe)

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import PortfolioView from '../views/PortfolioView.vue'
+// Route-level code-splitting for better TTI
+const PortfolioView = () => import('../views/PortfolioView.vue')
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

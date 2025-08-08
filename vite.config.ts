@@ -21,7 +21,7 @@ export default defineConfig({
         manualChunks: {
           vendor: ['vue', 'vue-router', 'vue-i18n'],
           ui: ['naive-ui'],
-          video: ['plyr']
+          // keep vendor groups minimal; remove unused buckets
         }
       }
     }

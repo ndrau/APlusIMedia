@@ -16,7 +16,7 @@
     />
 
     <!-- Overlay -->
-    <div class="hero-overlay" />
+    <div class="hero-overlay" aria-hidden="true" />
 
     <!-- Hero Content -->
     <HeroContent 
@@ -26,7 +26,7 @@
       @toggle-mute="toggleMute"
     />
 
-    <!-- Video Controls -->
+    <!-- Video Controls (optional) -->
     <!-- <VideoControls 
       :is-playing="isPlaying"
       :is-muted="isMuted"
@@ -41,7 +41,7 @@
 import { ref, computed } from 'vue'
 import { useResponsive } from '@/composables/useResponsive'
 import VideoPlayer from './VideoPlayer.vue'
-import VideoControls from './VideoControls.vue'
+// import VideoControls from './VideoControls.vue'
 import HeroContent from './HeroContent.vue'
 
 // Video sources
@@ -67,7 +67,8 @@ const currentVideoSource = computed(() => {
 
 // Methods
 const getVideoElement = (): HTMLVideoElement | null => {
-  return videoPlayerRef.value?.videoElement || null
+  // Access exposed ref from child component correctly
+  return videoPlayerRef.value?.videoElement?.value || null
 }
 
 const togglePlay = () => {

@@ -26,8 +26,9 @@ const props = withDefaults(defineProps<Props>(), {
 const scrollToTarget = () => {
   const targetElement = document.getElementById(props.targetId)
   if (targetElement) {
-    const navBar = document.querySelector('.nav') as HTMLElement
-    const navHeight = navBar ? navBar.offsetHeight : 70
+    // Our navigation uses the class `.portfolio-nav` and is fixed
+    const navBar = document.querySelector('.portfolio-nav') as HTMLElement | null
+    const navHeight = navBar ? navBar.getBoundingClientRect().height : 70
     const elementPosition = targetElement.offsetTop - navHeight
     window.scrollTo({
       top: elementPosition,

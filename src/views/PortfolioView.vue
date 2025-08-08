@@ -33,12 +33,19 @@
                         <img 
                           class="is-content" 
                           :src="video.posterImage" 
-                          :alt="video.title"
+                           :alt="getAltText(video)"
+                           :aria-label="`Play video: ${video.title || 'Video'}`"
+                           role="button"
+                           tabindex="0"
+                          loading="lazy"
+                          decoding="async"
                           :width="getImageWidth(video)"
                           :height="getImageHeight(video)"
                           data-width="original" 
                           data-scaling="no"
                           @click="handleVideoPlay(video)"
+                           @keydown.enter.prevent="handleVideoPlay(video)"
+                           @keydown.space.prevent="handleVideoPlay(video)"
                           @mouseenter="handleMouseEnter"
                           @mouseleave="handleMouseLeave"
                         />
@@ -168,6 +175,10 @@ const getImageHeight = (video: Video): number => {
   return video.aspectRatio === 'vertical' ? 1920 : 1707
 }
 
+const getAltText = (video: Video): string => {
+  return video.title ? `${video.title} – Preview image` : 'Portfolio video preview image'
+}
+
 // Event handlers
 const handleVideoPlay = (video: Video) => {
   selectedVideo.value = video
@@ -187,10 +198,24 @@ const handleEscapeKey = (event: KeyboardEvent) => {
 }
 
 // Custom cursor methods
-const handleMouseMove = (event: MouseEvent) => {
+let rafPending = false
+let lastMouseX = 0
+let lastMouseY = 0
+
+const updateCursor = () => {
   cursorStyle.value = {
-    left: `${event.clientX}px`,
-    top: `${event.clientY}px`
+    left: `${lastMouseX}px`,
+    top: `${lastMouseY}px`
+  }
+  rafPending = false
+}
+
+const handleMouseMove = (event: MouseEvent) => {
+  lastMouseX = event.clientX
+  lastMouseY = event.clientY
+  if (!rafPending) {
+    rafPending = true
+    requestAnimationFrame(updateCursor)
   }
 }
 

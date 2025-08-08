@@ -29,6 +29,6 @@ export const videoPortfolio: VideoItem[] = [
     videoType: 'youtube',
     videoId: '2txU1seXUkM',
     startTime: 29,
-    posterImage: '/videos/thumbnails/schausonntag.png   '
+    posterImage: '/videos/thumbnails/schausonntag.png'
   }
 ] 
