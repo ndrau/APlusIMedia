@@ -52,10 +52,22 @@
                           @mouseleave="handleMouseLeave"
                         />
                         <!-- Title & Description Overlay -->
-                        <div class="image-caption" aria-hidden="false">
+                        <div
+                          class="image-caption"
+                          :class="`caption-${video.aspectRatio || 'horizontal'}`"
+                          aria-hidden="false"
+                        >
                           <h3 class="video-title">{{ video.title }}</h3>
                           <p class="video-description">{{ video.description }}</p>
                         </div>
+                        <!-- Desktop Play Button Overlay -->
+                        <div class="desktop-play-button">
+                          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="40" fill="rgba(255, 255, 255, 0.9)" stroke="rgba(0, 0, 0, 0.1)" stroke-width="2"/>
+                            <path d="M32 26L56 40L32 54V26Z" fill="rgba(0, 0, 0, 0.8)"/>
+                          </svg>
+                        </div>
+
                         <!-- Mobile Play Button Overlay -->
                         <div class="mobile-play-button">
                           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,14 +89,7 @@
     <!-- Portfolio Footer -->
     <PortfolioFooter />
 
-    <!-- Custom Cursor -->
-    <div 
-      v-show="showCustomCursor" 
-      class="custom-cursor"
-      :style="cursorStyle"
-    >
-      Play
-    </div>
+
 
     <!-- Video Player Modal -->
     <n-modal
@@ -136,12 +141,7 @@ const showVideoPlayer = ref(false)
 const selectedVideo = ref<Video | null>(null)
 const videoModal = ref<any>(null)
 
-// Custom cursor state
-const showCustomCursor = ref(false)
-const cursorStyle = ref({
-  left: '0px',
-  top: '0px'
-})
+
 
 // Video aspect ratio handling
 const { getAspectRatioClass, getModalDimensions } = useVideoAspectRatio()
@@ -212,34 +212,13 @@ const handleEscapeKey = (event: KeyboardEvent) => {
   }
 }
 
-// Custom cursor methods
-let rafPending = false
-let lastMouseX = 0
-let lastMouseY = 0
-
-const updateCursor = () => {
-  cursorStyle.value = {
-    left: `${lastMouseX}px`,
-    top: `${lastMouseY}px`
-  }
-  rafPending = false
-}
-
-const handleMouseMove = (event: MouseEvent) => {
-  lastMouseX = event.clientX
-  lastMouseY = event.clientY
-  if (!rafPending) {
-    rafPending = true
-    requestAnimationFrame(updateCursor)
-  }
-}
-
+// Mouse event handlers for normal cursor behavior
 const handleMouseEnter = () => {
-  showCustomCursor.value = true
+  // Normal cursor behavior - no special effects needed
 }
 
 const handleMouseLeave = () => {
-  showCustomCursor.value = false
+  // Normal cursor behavior - no special effects needed
 }
 
 // GSAP ScrollTrigger setup
@@ -254,7 +233,6 @@ onMounted(() => {
   setTheme('light')
   
   document.addEventListener('keydown', handleEscapeKey)
-  document.addEventListener('mousemove', handleMouseMove)
   
   // Setup GSAP ScrollTrigger after DOM is ready
   nextTick(() => {
@@ -269,7 +247,6 @@ onUnmounted(() => {
   }
   
   document.removeEventListener('keydown', handleEscapeKey)
-  document.removeEventListener('mousemove', handleMouseMove)
   
   // Kill all ScrollTriggers
   destroyScroll()
@@ -302,24 +279,7 @@ onUnmounted(() => {
   animation: entranceEaseIn 0.8s ease-out forwards;
 }
 
-// Custom Cursor
-.custom-cursor {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  font-family: 'IvyOra', serif;
-  font-size: 3rem;
-  font-weight: 300;
-  color: #ffffff;
-  mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.2s ease;
-  
-  // Hide on mobile devices
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
+
 
 
 
@@ -412,6 +372,14 @@ onUnmounted(() => {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform 0.3s ease;
+
+        // Scale the entire container on hover for perfect alignment
+        @media (min-width: 769px) {
+          &:hover {
+            transform: scale(1.02);
+          }
+        }
       }
       
       img {
@@ -420,13 +388,11 @@ onUnmounted(() => {
         max-width: 100%;
         object-fit: contain;
         object-position: center;
-        cursor: none; /* Hide default cursor on desktop */
+        cursor: pointer; /* Use pointer cursor on desktop */
         transition: transform 0.3s ease, filter 0.3s ease;
         pointer-events: auto; /* Always enable pointer events on images */
         
-        &:hover {
-          transform: scale(1.02);
-        }
+
         
         // Show default cursor on mobile
         @media (max-width: 768px) {
@@ -436,35 +402,76 @@ onUnmounted(() => {
 
       .image-caption {
         position: absolute;
-        left: 1rem;
-        bottom: 1rem;
-        max-width: min(92%, 640px);
+        left: 0;
+        bottom: 0;
+        width: 100%;
         color: #fff;
         pointer-events: none; // allow clicks to pass through to image
         z-index: 3;
-        padding: 0.6rem 0.85rem;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.82);
-        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        padding: 1rem 1.5rem;
+        background: rgba(81, 81, 81, 0.8);
+        backdrop-filter: blur(8px);
         opacity: 0;
-        transform: translateY(6px);
-        transition: opacity 220ms ease, transform 220ms ease;
+        transform: translateY(100%);
+        transition: opacity 300ms ease, transform 300ms ease;
+        transform-origin: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 1rem;
+
+        // Default height (fallback)
+        height: 25%;
+
+        // Aspect ratio specific heights
+        &.caption-horizontal {
+          height: 30%; // Medium caption for landscape images
+        }
+
+        &.caption-vertical {
+          height: 13%; // Smaller caption for portrait images
+        }
+
+        &.caption-square {
+          height: 35%; // Larger caption for square images
+        }
+
 
         .video-title {
           font-family: 'IvyOra', serif;
-          font-size: clamp(1rem, 2vw, 1.25rem);
+          font-size: clamp(0.95rem, 2vw, 1.15rem);
           font-weight: 400;
-          letter-spacing: 0;
+          letter-spacing: 0.01em;
           line-height: 1.25;
-          margin: 0 0 0.2rem 0;
+          margin: 0 0 0.15rem 0;
         }
 
         .video-description {
           font-family: 'IvyOra', serif;
-          font-size: clamp(0.8rem, 1.6vw, 0.95rem);
+          font-size: clamp(0.8rem, 1.4vw, 0.95rem);
           margin: 0;
           font-weight: 300;
-          color: rgba(255,255,255,0.9);
+          color: rgba(255,255,255,0.85);
+        }
+
+        @media (max-width: 768px) {
+          padding: 1rem 1rem 0.75rem 1rem;
+
+          // Mobile aspect ratio heights
+          height: 30%; // Default
+          &.caption-horizontal {
+            height: 32%;
+          }
+          &.caption-vertical {
+            height: 28%;
+          }
+          &.caption-square {
+            height: 34%;
+          }
+
+          .video-description {
+            display: none;
+          }
         }
       }
 
@@ -480,6 +487,36 @@ onUnmounted(() => {
         transform: translateY(0);
       }
       
+      .desktop-play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        transform-origin: center center;
+        z-index: 5; // Increased z-index to ensure it's visible
+
+        // Hide on mobile
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        svg {
+          filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.4));
+          transition: transform 0.3s ease;
+        }
+      }
+
+      // Show play button on desktop hover
+      @media (min-width: 769px) {
+        .image-container:hover .desktop-play-button {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
+
       .mobile-play-button {
         position: absolute;
         top: 50%;
@@ -488,7 +525,7 @@ onUnmounted(() => {
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.3s ease;
-        
+
         // Show on mobile only
         @media (max-width: 768px) {
           opacity: 1;
