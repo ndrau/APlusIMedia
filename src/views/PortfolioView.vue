@@ -15,6 +15,7 @@
         <section
           v-for="(item, index) in portfolioContent"
           :key="item.id"
+
           class="content-block scroll-away"
           :data-height="'fullscreen'"
           :data-justify="'center'"

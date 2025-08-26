@@ -21,10 +21,12 @@
 </template>
 
 <script setup lang="ts">
-// No props or logic needed for this component
+// No additional logic needed for basic navigation
 </script>
 
 <style scoped lang="scss">
+// Navigation styles
+
 // Navigation Elements
 .portfolio-nav {
   position: fixed;
@@ -76,10 +78,9 @@
     font-size: 0.875rem;
     font-weight: 300;
     transition: color 0.3s ease;
-    
+
     &:hover {
       color: var(--primary-color);
-      opacity: 1;
     }
   }
   
@@ -104,7 +105,7 @@
       border-radius: 4px;
       z-index: 100;
     }
-    
+
     .nav-top-left {
       top: 1rem;
       left: 1rem;
@@ -112,7 +113,7 @@
       flex-direction: column;
       gap: 0.25rem;
     }
-    
+
     .nav-top-center {
       position: fixed;
       top: 1rem;
@@ -120,16 +121,16 @@
       transform: translateX(-50%);
       z-index: 200;
     }
-    
+
     .nav-top-right {
       top: 1rem;
       right: 1rem;
     }
-    
+
     .nav-link {
       font-size: 0.75rem;
     }
-    
+
     .brand-name {
       font-size: 1rem;
     }
