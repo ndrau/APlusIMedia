@@ -9,12 +9,12 @@
     <!-- Hero Section -->
     <VideoHero />
 
-    <!-- Portfolio Videos Container -->
+        <!-- Portfolio Content Container -->
     <main id="portfolio-content" class="portfolio-content">
       <div class="videos-stack">
-        <section 
-          v-for="(video, index) in portfolioVideos" 
-          :key="video.id"
+        <section
+          v-for="(item, index) in portfolioContent"
+          :key="item.id"
           class="content-block scroll-away"
           :data-height="'fullscreen'"
           :data-justify="'center'"
@@ -25,40 +25,41 @@
         >
           <div class="container">
             <div class="row">
-              <div class="column" :data-xl-width="getColumnWidth(video)">
+              <div class="column" :data-xl-width="getColumnWidth(item)">
                 <div class="content-wrapper">
-                  <div class="column-content" data-module="image">
+                  <!-- Video Content -->
+                  <div v-if="item.type === 'video'" class="column-content" data-module="image">
                     <div class="ce-image" data-align="left">
                       <div class="image-container">
-                        <img 
-                          class="is-content" 
-                          :src="video.posterImage" 
-                           :alt="getAltText(video)"
-                           :aria-label="`Play video: ${video.title || 'Video'}`"
-                           role="button"
-                           tabindex="0"
-                            :srcset="getSrcSet(video)"
-                            :sizes="'(max-width: 768px) 88vw, 58vw'"
+                        <img
+                          class="is-content"
+                          :src="(item.content as Video).posterImage"
+                          :alt="getAltText(item.content as Video)"
+                          :aria-label="`Play video: ${(item.content as Video).title || 'Video'}`"
+                          role="button"
+                          tabindex="0"
+                          :srcset="getSrcSet(item.content as Video)"
+                          :sizes="'(max-width: 768px) 88vw, 58vw'"
                           loading="lazy"
                           decoding="async"
-                          :width="getImageWidth(video)"
-                          :height="getImageHeight(video)"
-                          data-width="original" 
+                          :width="getImageWidth(item.content as Video)"
+                          :height="getImageHeight(item.content as Video)"
+                          data-width="original"
                           data-scaling="no"
-                          @click="handleVideoPlay(video)"
-                           @keydown.enter.prevent="handleVideoPlay(video)"
-                           @keydown.space.prevent="handleVideoPlay(video)"
+                          @click="handleVideoPlay(item.content as Video)"
+                          @keydown.enter.prevent="handleVideoPlay(item.content as Video)"
+                          @keydown.space.prevent="handleVideoPlay(item.content as Video)"
                           @mouseenter="handleMouseEnter"
                           @mouseleave="handleMouseLeave"
                         />
                         <!-- Title & Description Overlay -->
                         <div
                           class="image-caption"
-                          :class="`caption-${video.aspectRatio || 'horizontal'}`"
+                          :class="`caption-${(item.content as Video).aspectRatio || 'horizontal'}`"
                           aria-hidden="false"
                         >
-                          <h3 class="video-title">{{ video.title }}</h3>
-                          <p class="video-description">{{ video.description }}</p>
+                          <h3 class="video-title">{{ (item.content as Video).title }}</h3>
+                          <p class="video-description">{{ (item.content as Video).description }}</p>
                         </div>
                         <!-- Desktop Play Button Overlay -->
                         <div class="desktop-play-button">
@@ -77,6 +78,11 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+
+                  <!-- Service Content -->
+                  <div v-else-if="item.type === 'service'" class="column-content" data-module="service">
+                    <ServiceCard :service="item.content as Service" />
                   </div>
                 </div>
               </div>
@@ -124,10 +130,11 @@ import PortfolioFooter from '@/components/portfolio/PortfolioFooter.vue'
 import PortfolioNavigation from '@/components/portfolio/PortfolioNavigation.vue'
 import PortfolioNavFooter from '@/components/portfolio/PortfolioNavFooter.vue'
 import VideoHero from '@/components/portfolio/hero/VideoHero.vue'
-import { portfolioVideos } from '@/data/portfolioVideos'
+import { portfolioContent } from '@/data/portfolioVideos'
 import { useVideoAspectRatio } from '@/composables/useVideoAspectRatio'
 import { useTheme } from '@/composables/useTheme'
-import type { Video } from '@/types/video'
+import ServiceCard from '@/components/portfolio/ServiceCard.vue'
+import type { PortfolioItem, Video, Service } from '@/types/video'
 
 // Register GSAP plugins
 const { init: initScroll, destroy: destroyScroll } = usePortfolioScroll()
@@ -165,9 +172,18 @@ const modalStyles = computed(() => {
 })
 
 // Helper functions for column and image sizing
-const getColumnWidth = (video: Video): number => {
-  // Return 7 for horizontal videos, 5 for vertical videos
-  return video.aspectRatio === 'vertical' ? 5 : 7
+const getColumnWidth = (item: PortfolioItem): number => {
+  if (item.type === 'video') {
+    const video = item.content as Video
+    // Return 7 for horizontal videos, 5 for vertical videos
+    return video.aspectRatio === 'vertical' ? 5 : 7
+  } else if (item.type === 'service') {
+    const service = item.content as Service
+    // Return 7 for horizontal services, 5 for vertical services
+    return service.aspectRatio === 'vertical' ? 5 : 7
+  }
+  // Default fallback
+  return 7
 }
 
 const getImageWidth = (video: Video): number => {
