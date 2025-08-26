@@ -2,8 +2,8 @@
   <nav class="portfolio-nav">
     <!-- Top Left -->
     <div class="nav-top-left">
-      <router-link :to="{ name: 'portfolio' }" class="nav-link">Portfolio</router-link>
-      <router-link :to="{ name: 'wedding' }" class="nav-link">Hochzeitsfotografie</router-link>
+      <router-link :to="{ name: 'portfolio' }" class="nav-link nav-link-1">Portfolio</router-link>
+      <router-link :to="{ name: 'wedding' }" class="nav-link nav-link-2">Hochzeitsfotografie</router-link>
       <!-- <router-link to="/" class="nav-link">Film</router-link> -->
       <!-- <router-link to="/" class="nav-link">Gallery</router-link> -->
       <!-- <router-link to="/" class="nav-link">Index</router-link> -->
@@ -78,13 +78,37 @@
     font-family: 'IvyOra', serif;
     font-size: 0.875rem;
     font-weight: 300;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.6s ease;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: navEaseIn 0.8s ease-out forwards;
 
     &:hover {
       color: var(--primary-color);
     }
   }
-  
+
+  // Staggered animation delays for nav items
+  .nav-link-1 {
+    animation-delay: 0.2s;
+  }
+
+  .nav-link-2 {
+    animation-delay: 0.4s;
+  }
+
+  // Navigation ease-in animation
+  @keyframes navEaseIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   .brand-name {
     font-family: 'IvyOra', serif;
     font-size: 2rem;
@@ -130,6 +154,17 @@
 
     .nav-link {
       font-size: 0.75rem;
+      transform: translateY(20px); // Slightly less movement on mobile
+      animation: navEaseIn 0.6s ease-out forwards;
+    }
+
+    // Mobile animation delays
+    .nav-link-1 {
+      animation-delay: 0.1s;
+    }
+
+    .nav-link-2 {
+      animation-delay: 0.25s;
     }
 
     .brand-name {
