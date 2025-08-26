@@ -1,3 +1,4 @@
+import type { Ref } from 'vue'
 import type { Video } from '@/types/video'
 
 interface UsePortfolioEventsProps {
