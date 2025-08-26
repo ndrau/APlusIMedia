@@ -20,8 +20,23 @@
           <p class="bio-quote">Wir brauchen keinen Slogan – unsere Arbeit spricht für sich.</p>
         </section>
 
-        <!-- Three Column Layout -->
-        <div class="content-grid">
+
+
+        <!-- Career Background Section -->
+        <section class="career-background-section">
+          <p class="career-background-text">
+            Bevor wir unsere Leidenschaft für die Videografie entdeckt haben, haben wir beide unterschiedliche Karrierewege eingeschlagen.
+            Immanuel arbeitet als Architekt und Andy ist Software-Entwickler. Diese vielfältigen Erfahrungen bereichern unsere Arbeit
+            als Videografen und bringen frische Perspektiven in jedes Projekt. Heute widmen wir uns mit voller Hingabe der Filmproduktion
+            und erschaffen emotionale Geschichten, die Menschen berühren.
+          </p>
+        </section>
+
+        <!-- Team CV Component -->
+        <TeamCV />
+
+                <!-- Three Column Layout -->
+                <div class="content-grid">
           <!-- Experience Section -->
           <section class="content-section">
             <h2 class="section-title">Erfahrung</h2>
@@ -88,7 +103,7 @@
             Öschberghof, Esszeit Weber, Johanniterbad Rottweil, Schwarzwaldküchen, Stadt Rottweil.
           </p>
         </section>
-        
+
         <!-- Bottom Spacer -->
         <div class="bottom-spacer"></div>
       </main>
@@ -99,6 +114,7 @@
 <script setup lang="ts">
 import PortfolioNavigation from '@/components/portfolio/PortfolioNavigation.vue'
 import PortfolioNavFooter from '@/components/portfolio/PortfolioNavFooter.vue'
+import TeamCV from '@/components/portfolio/TeamCV.vue'
 </script>
 
 <style scoped lang="scss">
@@ -270,6 +286,45 @@ import PortfolioNavFooter from '@/components/portfolio/PortfolioNavFooter.vue'
   color: #555555;
 }
 
+// Career Background Section
+.career-background-section {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.career-background-text {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555555;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+
+  // Add a subtle quote styling
+  &::before {
+    content: '"';
+    font-size: 3rem;
+    color: #999;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    font-family: 'Georgia', serif;
+  }
+
+  &::after {
+    content: '"';
+    font-size: 3rem;
+    color: #999;
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+    font-family: 'Georgia', serif;
+  }
+}
+
 // Top Spacer
 .top-spacer {
   height: 15vh;
@@ -298,6 +353,21 @@ import PortfolioNavFooter from '@/components/portfolio/PortfolioNavFooter.vue'
     gap: 2rem;
   }
 
+  .career-background-section {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .career-background-text {
+    font-size: 0.95rem;
+    max-width: 600px;
+
+    &::before,
+    &::after {
+      display: none; // Hide quote marks on mobile for cleaner look
+    }
+  }
+
   .bio-text {
     font-size: 1.1rem;
   }
@@ -307,10 +377,20 @@ import PortfolioNavFooter from '@/components/portfolio/PortfolioNavFooter.vue'
   .container {
     padding: 2rem;
     padding-top: 4rem; // Adjust top padding for smaller screens
-    
+
     &::after {
       height: 60px; // Even smaller gradient for very small screens
     }
+  }
+
+  .career-background-section {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .career-background-text {
+    font-size: 0.9rem;
+    max-width: 500px;
   }
 
   .bio-text {
