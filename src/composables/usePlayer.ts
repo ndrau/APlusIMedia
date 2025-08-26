@@ -37,19 +37,23 @@ export function usePlayer(props: VideoPlayerProps, playerContainer: Ref<HTMLElem
         iframe.allowFullscreen = true
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         
-        // Build YouTube URL with parameters
+        // Build YouTube URL with parameters for minimal UI
         const params = new URLSearchParams({
           autoplay: '0', // Start paused
           rel: '0', // Don't show related videos
           modestbranding: '1', // Hide YouTube logo
           iv_load_policy: '3', // Hide annotations
-          controls: '1', // Show YouTube controls
-          fs: '1', // Enable fullscreen
+          controls: '0', // Hide YouTube controls for minimal UI
+          fs: '0', // Hide YouTube fullscreen button
           showinfo: '0', // Hide video info
           playsinline: '1', // Important for iOS
           loop: '1', // Loop video
           playlist: props.videoId, // Required for loop
           mute: '0', // Start unmuted
+          disablekb: '1', // Disable keyboard shortcuts for cleaner experience
+          enablejsapi: '1', // Enable JavaScript API
+          cc_load_policy: '0', // Hide closed captions that might show branding
+          autohide: '1', // Auto-hide any remaining UI elements
           ...(props.startTime && { start: props.startTime.toString() })
         })
         

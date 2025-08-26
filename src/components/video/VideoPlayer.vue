@@ -1,6 +1,8 @@
 <template>
   <n-el class="video-player-container">
     <div ref="playerContainer" class="plyr-container"></div>
+    <!-- Overlay to hide YouTube branding -->
+    <div class="youtube-overlay"></div>
     <button @click="$emit('close')" class="close-button" aria-label="Close video player">
       <n-icon size="24" color="white">
         <CloseIcon />
@@ -70,6 +72,18 @@ onUnmounted(() => {
     &:hover {
       background: rgba(0, 0, 0, 0.9);
     }
+  }
+
+  // Overlay to hide YouTube branding that appears on top
+  .youtube-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; // Cover the top branding area
+    background: transparent;
+    z-index: 5;
+    pointer-events: none;
   }
 
 
