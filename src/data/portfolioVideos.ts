@@ -65,7 +65,7 @@ export const portfolioContent: PortfolioItem[] = [
     content: {
       id: '3',
       title: 'Schausonntag - Küchen Event',
-      description: '2025 - Live-Koch-Event mit Schwarzwälder Spezialitäten und regionalen Zutaten',
+      description: '2025 - Jeden 1. Sonntag im Monat',
       duration: '0:47',
       videoType: 'youtube',
       videoId: '2txU1seXUkM',
@@ -163,7 +163,7 @@ export const portfolioContent: PortfolioItem[] = [
     content: {
       id: '5',
       title: 'Öschberghof',
-      description: '2024 - Showreel',
+      description: '5 Sterne Luxushotel für Wellness',
       duration: '0:30',
       videoType: 'youtube',
       videoId: 'hpkXolxiN_o',
