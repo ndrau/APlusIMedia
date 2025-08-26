@@ -15,6 +15,11 @@ const router = createRouter({
       name: 'info',
       component: () => import('../views/InfoView.vue'),
     },
+    {
+      path: '/hochzeitsfotografie',
+      name: 'wedding',
+      component: () => import('../views/WeddingPhotographyView.vue'),
+    },
     // Redirect any unknown routes to portfolio
     {
       path: '/:pathMatch(.*)*',

@@ -3,6 +3,7 @@
     <!-- Top Left -->
     <div class="nav-top-left">
       <router-link :to="{ name: 'portfolio' }" class="nav-link">Portfolio</router-link>
+      <router-link :to="{ name: 'wedding' }" class="nav-link">Hochzeitsfotografie</router-link>
       <!-- <router-link to="/" class="nav-link">Film</router-link> -->
       <!-- <router-link to="/" class="nav-link">Gallery</router-link> -->
       <!-- <router-link to="/" class="nav-link">Index</router-link> -->

@@ -15,7 +15,7 @@
         <section
           v-for="(item, index) in portfolioContent"
           :key="item.id"
-
+          :id="item.type === 'service' ? item.content.id : undefined"
           class="content-block scroll-away"
           :data-height="'fullscreen'"
           :data-justify="'center'"
@@ -194,7 +194,7 @@ onUnmounted(() => {
 
 .portfolio-content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .videos-stack {
@@ -214,7 +214,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 10;
   pointer-events: none;
 
   .container {
@@ -249,6 +249,7 @@ onUnmounted(() => {
   }
 
   .content-wrapper {
+    pointer-events: auto;
     height: 100%;
     width: 100%;
     display: flex;
@@ -266,7 +267,7 @@ onUnmounted(() => {
 // Portfolio Content
 .portfolio-content {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .videos-stack {
@@ -286,17 +287,17 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 10;
   pointer-events: none;
 
-  
+
   .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
   }
-  
+
   .row {
     display: flex;
     margin: 0 -1rem;
@@ -311,17 +312,18 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     &[data-xl-width="5"] {
       flex: 0 0 41.666667%;
     }
-    
+
     &[data-xl-width="7"] {
       flex: 0 0 58.333333%;
     }
   }
   
   .content-wrapper {
+    pointer-events: auto;
     height: 100%;
     width: 100%;
     display: flex;
@@ -354,6 +356,7 @@ onUnmounted(() => {
     }
 
     .content-wrapper {
+    pointer-events: auto;
       padding: 0;
       width: 100%;
     }

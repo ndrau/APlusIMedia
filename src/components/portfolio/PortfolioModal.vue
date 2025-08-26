@@ -1,29 +1,35 @@
 <template>
-  <n-modal
-    ref="videoModal"
-    v-model:show="showModal"
-    :mask-closable="true"
-    :closable="false"
-    preset="card"
-    :class="['video-modal', modalClass]"
-    :style="modalStyles"
-  >
-    <VideoPlayer
-      v-if="selectedVideo"
-      :video-type="selectedVideo.videoType"
-      :video-id="selectedVideo.videoId"
-      :video-url="selectedVideo.videoUrl"
-      :poster-image="selectedVideo.posterImage"
-      :start-time="selectedVideo.startTime"
-      :require-consent="selectedVideo.requireConsent"
-      @close="handleClose"
-    />
-  </n-modal>
+  <!-- Custom Modal Overlay -->
+  <teleport to="body">
+    <transition name="video-modal" appear>
+      <div
+        v-if="showModal"
+        class="custom-video-modal-overlay"
+        @click.self="handleClose"
+      >
+        <div
+          class="custom-video-modal"
+          :class="modalClass"
+          :style="modalStyles"
+        >
+          <VideoPlayer
+            v-if="selectedVideo"
+            :video-type="selectedVideo.videoType"
+            :video-id="selectedVideo.videoId"
+            :video-url="selectedVideo.videoUrl"
+            :poster-image="selectedVideo.posterImage"
+            :start-time="selectedVideo.startTime"
+            :require-consent="selectedVideo.requireConsent"
+            @close="handleClose"
+          />
+        </div>
+      </div>
+    </transition>
+  </teleport>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { NModal } from 'naive-ui'
+import { computed } from 'vue'
 import VideoPlayer from '@/components/video/VideoPlayer.vue'
 import type { Video } from '@/types/video'
 
@@ -42,8 +48,6 @@ interface PortfolioModalEmits {
 const props = defineProps<PortfolioModalProps>()
 const emit = defineEmits<PortfolioModalEmits>()
 
-const videoModal = ref<any>(null)
-
 // Computed properties for modal state
 const showModal = computed({
   get: () => props.show,
@@ -57,68 +61,126 @@ const handleClose = () => {
 </script>
 
 <style scoped lang="scss">
-.video-modal {
+// Modal Overlay
+.custom-video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+// Modal Container
+.custom-video-modal {
+  position: relative;
   background: transparent;
   border: none;
   box-shadow: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  :deep(.n-card__content) {
-    padding: 0;
-    height: 100%;
-  }
-
-  :deep(.n-card) {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
+  // Ensure no padding on the container
+  padding: 0;
+  margin: 0;
 }
 
-// Horizontal videos (16:9, 4:3, etc.)
-.video-modal.video-horizontal {
+// Video Modal Sizes
+.custom-video-modal.video-horizontal {
   width: 90vw;
   max-width: 1200px;
   height: 80vh;
   max-height: 675px;
 }
 
-// Vertical videos (9:16, 4:5, etc.)
-.video-modal.video-vertical {
+.custom-video-modal.video-vertical {
   width: 90vw;
   max-width: 405px;
   height: 80vh;
   max-height: 720px;
 }
 
-// Square videos (1:1, etc.)
-.video-modal.video-square {
+.custom-video-modal.video-square {
   width: 90vw;
   max-width: 600px;
   height: 80vh;
   max-height: 600px;
 }
 
+// Modal Transitions
+.video-modal-enter-active,
+.video-modal-leave-active {
+  transition: all 0.3s ease;
+}
+
+.video-modal-enter-from,
+.video-modal-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.video-modal-enter-to,
+.video-modal-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
 // Mobile Styles
 @media (max-width: 768px) {
-  .video-modal.video-horizontal {
+  .custom-video-modal-overlay {
+    padding: 1rem;
+  }
+
+  .custom-video-modal.video-horizontal {
     width: 95vw;
     height: calc(95vw * 9 / 16);
     max-width: none;
     max-height: 70vh;
   }
 
-  .video-modal.video-vertical {
+  .custom-video-modal.video-vertical {
     width: calc(70vh * 9 / 16);
     height: 70vh;
     max-width: 95vw;
     max-height: none;
   }
 
-  .video-modal.video-square {
+  .custom-video-modal.video-square {
     width: 70vh;
     height: 70vh;
     max-width: 95vw;
     max-height: none;
+  }
+}
+
+// High Contrast Mode Support
+@media (prefers-contrast: high) {
+  .custom-video-modal-overlay {
+    background: rgba(0, 0, 0, 0.95);
+  }
+}
+
+// Reduced Motion Support
+@media (prefers-reduced-motion: reduce) {
+  .video-modal-enter-active,
+  .video-modal-leave-active {
+    transition: none;
+  }
+
+  .video-modal-enter-from,
+  .video-modal-leave-to {
+    opacity: 1;
+    transform: none;
   }
 }
 </style>
