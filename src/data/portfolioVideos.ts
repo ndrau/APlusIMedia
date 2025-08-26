@@ -207,22 +207,22 @@ export const portfolioContent: PortfolioItem[] = [
   },
     // Service content
     {
-      id: 'service-3',
+      id: 'service-4',
       type: 'service',
       content: {
-        id: 'service-3',
-        title: 'Social Media Content',
-        description: 'Ansprechende Inhalte für digitale Plattformen',
-        content: '<p>In der heutigen schnelllebigen digitalen Welt sind fesselnde Social-Media-Inhalte entscheidend für Markensichtbarkeit und Engagement. Wir erstellen Content, der zum Scrollen einlädt, Interaktion fördert und bedeutungsvolle Verbindungen zu Ihrem Publikum aufbaut.</p><p>Von Short-Form-Videos bis hin zu Karussell-Beiträgen optimieren wir jeden Content für maximale Wirkung auf allen Social-Media-Plattformen.</p>',
+        id: 'service-4',
+        title: 'Hochzeits-Fotografie',
+        description: 'Emotionale Hochzeitsfotos für die Ewigkeit',
+        content: '<p>Jeder Hochzeitstag ist einzigartig und verdient es, in perfekten Bildern festgehalten zu werden. Wir begleiten Sie von der Vorbereitung über die Zeremonie bis zum letzten Tanz und erschaffen Fotos, die Ihre Liebe und diesen besonderen Tag für immer widerspiegeln.</p><p>Unsere Hochzeitsfotografie verbindet künstlerisches Auge mit technischer Präzision, um authentische und emotionale Momente einzufangen, die Sie noch in Jahren mit Freude betrachten werden.</p>',
         features: [
-          'Plattformoptimierte Inhalte',
-          'Short-Form-Video-Erstellung',
-          'Social-Strategie',
-          'Community-Management',
-          'Leistungsanalytik',
-          'Trend-Integration'
+          'Vollständige Hochzeitsdokumentation',
+          'Kreative Porträt-Aufnahmen',
+          'Gruppen- und Detailfotos',
+          'Natürliche Reportage-Fotografie',
+          'Hochwertige Bildbearbeitung',
+          'Schnelle Nachbearbeitung'
         ],
-        ctaText: 'Unsere Arbeit ansehen',
+        ctaText: 'Termin vereinbaren',
         ctaLink: '#portfolio',
         aspectRatio: 'horizontal'
       } as Service
