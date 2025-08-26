@@ -7,8 +7,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '1',
-      title: 'Jordanien',
-      description: '2023 - Short Film',
+      title: 'Wüstenreise Jordanien',
+      description: '2023 - Dokumentarfilm über die faszinierende Landschaft Jordaniens',
       duration: '15:30',
       videoType: 'youtube',
       videoId: '_o_NHVeq830',
@@ -23,8 +23,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '2',
-      title: 'Greece',
-      description: '2024 - Travel',
+      title: 'Griechenland - Inselhopping',
+      description: '2024 - Reise durch die griechischen Inseln und ihre verborgenen Schätze',
       duration: '22:15',
       videoType: 'youtube',
       videoId: 'eXbeGrkhghg',
@@ -64,8 +64,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '3',
-      title: 'Schausonntag',
-      description: '2025 - Schwarzwald Küchen',
+      title: 'Schausonntag - Küchen Event',
+      description: '2025 - Live-Koch-Event mit Schwarzwälder Spezialitäten und regionalen Zutaten',
       duration: '0:47',
       videoType: 'youtube',
       videoId: '2txU1seXUkM',
@@ -95,7 +95,7 @@ export const portfolioContent: PortfolioItem[] = [
       ],
       ctaText: 'Branding erkunden',
       ctaLink: '#services',
-      aspectRatio: 'vertical'
+      aspectRatio: 'horizontal'
     } as Service
   },
 
@@ -105,8 +105,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '11',
-      title: 'Mercedes-Benz CLA',
-      description: '2024 - Social Cut',
+      title: 'Rheinfall - Naturgewalt',
+      description: '2025 - Die imposante Wassermasse des größten Wasserfalls Europas',
       duration: '0:15',
       videoType: 'youtube',
       videoId: 'ILsfMUmgoVo',
@@ -121,8 +121,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '4',
-      title: 'Kitchen Show Sunday',
-      description: '2025 - Schwarzwald Küchen Campaign',
+      title: 'Johanniterbad',
+      description: '2025 - Kulinarischen Highlights aus Rottweil',
       duration: '0:47',
       videoType: 'youtube',
       videoId: 'MN7gOq4u3DE',
@@ -162,8 +162,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '5',
-      title: 'Cityscapes',
-      description: '2023 - Urban Visuals',
+      title: 'Öschberghof',
+      description: '2024 - Showreel',
       duration: '0:30',
       videoType: 'youtube',
       videoId: 'hpkXolxiN_o',
@@ -178,8 +178,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '6',
-      title: 'Behind the Scenes',
-      description: '2024 - Production Snippets',
+      title: 'Segelturn',
+      description: '2024 - Offenes Meer',
       duration: '0:25',
       videoType: 'youtube',
       videoId: '2c5bqaCspQo',
@@ -194,8 +194,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '9',
-      title: 'Brand Teaser',
-      description: '2023 - Short Promo',
+      title: 'Nitro Alternator 2025',
+      description: '2025 - Rider Video für das Nitro Alternator 2025',
       duration: '0:20',
       videoType: 'youtube',
       videoId: '6IFl-6hZBpo',
@@ -205,13 +205,35 @@ export const portfolioContent: PortfolioItem[] = [
       aspectRatio: 'horizontal'
     } as Video
   },
+    // Service content
+    {
+      id: 'service-3',
+      type: 'service',
+      content: {
+        id: 'service-3',
+        title: 'Social Media Content',
+        description: 'Ansprechende Inhalte für digitale Plattformen',
+        content: '<p>In der heutigen schnelllebigen digitalen Welt sind fesselnde Social-Media-Inhalte entscheidend für Markensichtbarkeit und Engagement. Wir erstellen Content, der zum Scrollen einlädt, Interaktion fördert und bedeutungsvolle Verbindungen zu Ihrem Publikum aufbaut.</p><p>Von Short-Form-Videos bis hin zu Karussell-Beiträgen optimieren wir jeden Content für maximale Wirkung auf allen Social-Media-Plattformen.</p>',
+        features: [
+          'Plattformoptimierte Inhalte',
+          'Short-Form-Video-Erstellung',
+          'Social-Strategie',
+          'Community-Management',
+          'Leistungsanalytik',
+          'Trend-Integration'
+        ],
+        ctaText: 'Unsere Arbeit ansehen',
+        ctaLink: '#portfolio',
+        aspectRatio: 'horizontal'
+      } as Service
+    },
   {
     id: 'video-9',
     type: 'video',
     content: {
       id: '7',
-      title: 'Motion Portrait',
-      description: '2024 - Vertical Reel',
+      title: 'Esszeit Weber - Kräutergarten',
+      description: '2024 - Neues aus dem Kräutergarten',
       duration: '0:18',
       videoType: 'youtube',
       videoId: 'na-8fGTJWtU',
@@ -226,8 +248,8 @@ export const portfolioContent: PortfolioItem[] = [
     type: 'video',
     content: {
       id: '8',
-      title: 'Outdoor Journey',
-      description: '2022 - Travel Moments',
+      title: 'Portugal',
+      description: '2025 - Portugal Drohnen Showreel',
       duration: '0:35',
       videoType: 'youtube',
       videoId: '4IvYBwYgFo8',
