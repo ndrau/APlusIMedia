@@ -125,6 +125,7 @@ const handleMouseLeave = () => {
       align-items: center;
       justify-content: center;
       transition: transform 0.3s ease;
+      overflow: hidden; // Ensure caption doesn't overflow container
 
       // Scale the entire container on hover for perfect alignment
       @media (min-width: 769px) {
@@ -154,11 +155,13 @@ const handleMouseLeave = () => {
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 100%;
+      right: 0;
+      width: auto;
+      max-width: 100%;
       color: #fff;
       pointer-events: none;
       z-index: 3;
-      padding: 1rem 1.5rem;
+      padding: 1rem clamp(0.75rem, 4%, 1.25rem);
       background: rgba(81, 81, 81, 0.8);
       backdrop-filter: blur(8px);
       opacity: 0;
@@ -169,6 +172,7 @@ const handleMouseLeave = () => {
       flex-direction: column;
       justify-content: flex-start;
       padding-top: 1rem;
+      box-sizing: border-box;
 
       // Default height (fallback)
       height: 25%;
@@ -204,7 +208,7 @@ const handleMouseLeave = () => {
       }
 
       @media (max-width: 768px) {
-        padding: 1rem 1rem 0.75rem 1rem;
+        padding: 0.75rem clamp(0.5rem, 3%, 1rem);
 
         // Mobile aspect ratio heights
         height: 30%; // Default
